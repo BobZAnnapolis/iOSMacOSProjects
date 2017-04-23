@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346A49B715F2DBA700D92F97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346A49B615F2DBA700D92F97 /* UIKit.framework */; };
+		346A49B915F2DBA700D92F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346A49B815F2DBA700D92F97 /* Foundation.framework */; };
+		346A49BB15F2DBA700D92F97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346A49BA15F2DBA700D92F97 /* CoreGraphics.framework */; };
+		346A49C115F2DBA700D92F97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 346A49BF15F2DBA700D92F97 /* InfoPlist.strings */; };
+		346A49C315F2DBA700D92F97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A49C215F2DBA700D92F97 /* main.m */; };
+		346A49C715F2DBA700D92F97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A49C615F2DBA700D92F97 /* AppDelegate.m */; };
+		34E3A0DF16C0F85900735C92 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E3A0DC16C0F85900735C92 /* Default-568h@2x.png */; };
+		34E3A0E016C0F85900735C92 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E3A0DD16C0F85900735C92 /* Default.png */; };
+		34E3A0E116C0F85900735C92 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E3A0DE16C0F85900735C92 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		346A49B215F2DBA700D92F97 /* iDeliverMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDeliverMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		346A49B615F2DBA700D92F97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		346A49B815F2DBA700D92F97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		346A49BA15F2DBA700D92F97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		346A49BE15F2DBA700D92F97 /* iDeliverMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDeliverMobile-Info.plist"; sourceTree = "<group>"; };
+		346A49C015F2DBA700D92F97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		346A49C215F2DBA700D92F97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		346A49C415F2DBA700D92F97 /* iDeliverMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDeliverMobile-Prefix.pch"; sourceTree = "<group>"; };
+		346A49C515F2DBA700D92F97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		346A49C615F2DBA700D92F97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34E3A0DC16C0F85900735C92 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		34E3A0DD16C0F85900735C92 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		34E3A0DE16C0F85900735C92 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		346A49AF15F2DBA700D92F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346A49B715F2DBA700D92F97 /* UIKit.framework in Frameworks */,
+				346A49B915F2DBA700D92F97 /* Foundation.framework in Frameworks */,
+				346A49BB15F2DBA700D92F97 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346A49A715F2DBA700D92F97 = {
+			isa = PBXGroup;
+			children = (
+				346A49BC15F2DBA700D92F97 /* iDeliverMobile */,
+				346A49B515F2DBA700D92F97 /* Frameworks */,
+				346A49B315F2DBA700D92F97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		346A49B315F2DBA700D92F97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				346A49B215F2DBA700D92F97 /* iDeliverMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		346A49B515F2DBA700D92F97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346A49B615F2DBA700D92F97 /* UIKit.framework */,
+				346A49B815F2DBA700D92F97 /* Foundation.framework */,
+				346A49BA15F2DBA700D92F97 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		346A49BC15F2DBA700D92F97 /* iDeliverMobile */ = {
+			isa = PBXGroup;
+			children = (
+				346A49C515F2DBA700D92F97 /* AppDelegate.h */,
+				346A49C615F2DBA700D92F97 /* AppDelegate.m */,
+				346A49BD15F2DBA700D92F97 /* Supporting Files */,
+			);
+			path = iDeliverMobile;
+			sourceTree = "<group>";
+		};
+		346A49BD15F2DBA700D92F97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34E3A0DC16C0F85900735C92 /* Default-568h@2x.png */,
+				34E3A0DD16C0F85900735C92 /* Default.png */,
+				34E3A0DE16C0F85900735C92 /* Default@2x.png */,
+				346A49BE15F2DBA700D92F97 /* iDeliverMobile-Info.plist */,
+				346A49BF15F2DBA700D92F97 /* InfoPlist.strings */,
+				346A49C215F2DBA700D92F97 /* main.m */,
+				346A49C415F2DBA700D92F97 /* iDeliverMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		346A49B115F2DBA700D92F97 /* iDeliverMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346A49CA15F2DBA700D92F97 /* Build configuration list for PBXNativeTarget "iDeliverMobile" */;
+			buildPhases = (
+				346A49AE15F2DBA700D92F97 /* Sources */,
+				346A49AF15F2DBA700D92F97 /* Frameworks */,
+				346A49B015F2DBA700D92F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDeliverMobile;
+			productName = iDeliverMobile;
+			productReference = 346A49B215F2DBA700D92F97 /* iDeliverMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		346A49A915F2DBA700D92F97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oak Leaf Enterprises, Inc.";
+			};
+			buildConfigurationList = 346A49AC15F2DBA700D92F97 /* Build configuration list for PBXProject "iDeliverMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 346A49A715F2DBA700D92F97;
+			productRefGroup = 346A49B315F2DBA700D92F97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				346A49B115F2DBA700D92F97 /* iDeliverMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346A49B015F2DBA700D92F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346A49C115F2DBA700D92F97 /* InfoPlist.strings in Resources */,
+				34E3A0DF16C0F85900735C92 /* Default-568h@2x.png in Resources */,
+				34E3A0E016C0F85900735C92 /* Default.png in Resources */,
+				34E3A0E116C0F85900735C92 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		346A49AE15F2DBA700D92F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346A49C315F2DBA700D92F97 /* main.m in Sources */,
+				346A49C715F2DBA700D92F97 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		346A49BF15F2DBA700D92F97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346A49C015F2DBA700D92F97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		346A49C815F2DBA700D92F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		346A49C915F2DBA700D92F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		346A49CB15F2DBA700D92F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDeliverMobile/iDeliverMobile-Prefix.pch";
+				INFOPLIST_FILE = "iDeliverMobile/iDeliverMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		346A49CC15F2DBA700D92F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDeliverMobile/iDeliverMobile-Prefix.pch";
+				INFOPLIST_FILE = "iDeliverMobile/iDeliverMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		346A49AC15F2DBA700D92F97 /* Build configuration list for PBXProject "iDeliverMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346A49C815F2DBA700D92F97 /* Debug */,
+				346A49C915F2DBA700D92F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346A49CA15F2DBA700D92F97 /* Build configuration list for PBXNativeTarget "iDeliverMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346A49CB15F2DBA700D92F97 /* Debug */,
+				346A49CC15F2DBA700D92F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 346A49A915F2DBA700D92F97 /* Project object */;
+}
