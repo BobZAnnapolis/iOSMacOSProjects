@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LBo-KB-xcN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53y-4d-98E">
+                                <color key="backgroundColor" red="0.0" green="0.50196081000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-hl-4Yi">
+                                <connections>
+                                    <action selector="controlHardware:" destination="2" eventType="valueChanged" id="p5a-Jm-lZ1"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3HS-1x-oPT">
+                                <connections>
+                                    <action selector="controlHardware:" destination="2" eventType="valueChanged" id="PzG-O0-soA"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Accelerometer" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yCx-4y-Vei">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gyroscope" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DFw-TR-e0n">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="ej0-mU-WbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="53y-4d-98E" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1YE-LI-2kC"/>
+                            <constraint firstAttribute="trailing" secondItem="Bf7-hl-4Yi" secondAttribute="trailing" constant="22" id="2TB-5e-SUm"/>
+                            <constraint firstItem="yCx-4y-Vei" firstAttribute="leading" secondItem="LBo-KB-xcN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QB0-Jn-fqI"/>
+                            <constraint firstAttribute="bottom" secondItem="53y-4d-98E" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Qfu-0o-gkK"/>
+                            <constraint firstItem="3HS-1x-oPT" firstAttribute="leading" secondItem="Bf7-hl-4Yi" secondAttribute="leading" type="default" id="U5t-BF-V0B"/>
+                            <constraint firstItem="DFw-TR-e0n" firstAttribute="leading" secondItem="LBo-KB-xcN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="U7I-GN-bSv"/>
+                            <constraint firstItem="DFw-TR-e0n" firstAttribute="top" secondItem="LBo-KB-xcN" secondAttribute="top" constant="67" id="f4q-Wo-dyz"/>
+                            <constraint firstItem="Bf7-hl-4Yi" firstAttribute="top" secondItem="LBo-KB-xcN" secondAttribute="top" constant="20" symbolic="YES" type="default" id="oc6-1T-vAt"/>
+                            <constraint firstItem="Bf7-hl-4Yi" firstAttribute="centerY" secondItem="yCx-4y-Vei" secondAttribute="centerY" type="default" id="uNV-T0-R09"/>
+                            <constraint firstItem="53y-4d-98E" firstAttribute="top" secondItem="LBo-KB-xcN" secondAttribute="top" constant="110" id="uch-fD-E7X"/>
+                            <constraint firstItem="53y-4d-98E" firstAttribute="leading" secondItem="LBo-KB-xcN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uyU-qJ-6Hr"/>
+                            <constraint firstItem="DFw-TR-e0n" firstAttribute="top" secondItem="3HS-1x-oPT" secondAttribute="top" type="default" id="z0O-ao-Bco"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="53y-4d-98E" id="8rx-8P-60s"/>
+                        <outlet property="toggleAccelerometer" destination="Bf7-hl-4Yi" id="G3S-kl-eBv"/>
+                        <outlet property="toggleGyroscope" destination="3HS-1x-oPT" id="HY7-5B-A7t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

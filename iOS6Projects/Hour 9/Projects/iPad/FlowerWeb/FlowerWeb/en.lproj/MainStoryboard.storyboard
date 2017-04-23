@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cHK-Uz-EXy">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-pC-3bz">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="695" id="B6J-ea-sfd"/>
+                                </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <webView alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpa-X6-7uF">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="OxP-NM-KgQ"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-DR-WM1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Il1-1z-7V5"/>
+                                    <constraint firstAttribute="width" constant="146" id="Npd-je-EWy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get New Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getFlower:" destination="2" eventType="touchUpInside" id="UZk-Lu-XkK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Show Photo Details:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1d2-tX-Snl">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="Z1V-Me-Fl7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose a Flower Color:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xtH-2G-QnW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="HJc-bi-F4W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mOd-qV-pD9">
+                                <connections>
+                                    <action selector="toggleFlowerDetail:" destination="2" eventType="valueChanged" id="aXk-De-7a3"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3fZ-7A-vWh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="733" id="RCv-vn-YbJ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Green"/>
+                                    <segment title="Violet"/>
+                                    <segment title="Magenta"/>
+                                </segments>
+                                <connections>
+                                    <action selector="getFlower:" destination="2" eventType="valueChanged" id="GmO-yF-Qi1"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96577171100000003" blue="0.76284725050000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3fZ-7A-vWh" firstAttribute="centerX" secondItem="xtH-2G-QnW" secondAttribute="centerX" type="default" id="3ES-SI-xeb"/>
+                            <constraint firstItem="jpa-X6-7uF" firstAttribute="trailing" secondItem="cHK-Uz-EXy" secondAttribute="trailing" type="default" id="4z9-Kf-SkE"/>
+                            <constraint firstAttribute="trailing" secondItem="3fZ-7A-vWh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JiD-TV-h31"/>
+                            <constraint firstItem="1d2-tX-Snl" firstAttribute="leading" secondItem="cHK-Uz-EXy" secondAttribute="leading" constant="247" id="OGg-ey-GmG"/>
+                            <constraint firstItem="jpa-X6-7uF" firstAttribute="leading" secondItem="cHK-Uz-EXy" secondAttribute="leading" type="default" id="Obg-7C-uO6"/>
+                            <constraint firstItem="jpa-X6-7uF" firstAttribute="centerX" secondItem="9IH-DR-WM1" secondAttribute="centerX" type="default" id="Q7D-Ok-T1F"/>
+                            <constraint firstAttribute="trailing" secondItem="mOd-qV-pD9" secondAttribute="trailing" constant="241" id="Quo-Dh-11H"/>
+                            <constraint firstItem="mOd-qV-pD9" firstAttribute="top" secondItem="cHK-Uz-EXy" secondAttribute="top" constant="126" id="S7P-H5-4K0"/>
+                            <constraint firstItem="g9t-pC-3bz" firstAttribute="trailing" secondItem="cHK-Uz-EXy" secondAttribute="trailing" type="default" id="TqF-hB-GXv"/>
+                            <constraint firstItem="3fZ-7A-vWh" firstAttribute="top" secondItem="cHK-Uz-EXy" secondAttribute="top" constant="69" id="UBb-Ve-lrl"/>
+                            <constraint firstItem="1d2-tX-Snl" firstAttribute="centerY" secondItem="mOd-qV-pD9" secondAttribute="centerY" type="default" id="Wfa-Lu-pE5"/>
+                            <constraint firstItem="jpa-X6-7uF" firstAttribute="bottom" secondItem="cHK-Uz-EXy" secondAttribute="bottom" type="default" id="XrI-6E-lqD"/>
+                            <constraint firstItem="g9t-pC-3bz" firstAttribute="leading" secondItem="cHK-Uz-EXy" secondAttribute="leading" type="default" id="hYQ-W5-WzB"/>
+                            <constraint firstItem="xtH-2G-QnW" firstAttribute="top" secondItem="cHK-Uz-EXy" secondAttribute="top" constant="33" id="hoQ-2b-lIr"/>
+                            <constraint firstItem="9IH-DR-WM1" firstAttribute="top" secondItem="cHK-Uz-EXy" secondAttribute="top" constant="217" id="va2-yj-dnz"/>
+                            <constraint firstItem="g9t-pC-3bz" firstAttribute="bottom" secondItem="cHK-Uz-EXy" secondAttribute="bottom" type="default" id="z3i-aW-SnP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorChoice" destination="3fZ-7A-vWh" id="Nmr-vD-Vts"/>
+                        <outlet property="flowerDetailView" destination="jpa-X6-7uF" id="nd5-bq-evn"/>
+                        <outlet property="flowerView" destination="g9t-pC-3bz" id="Rm9-kP-CJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getFlower:"/>
+                <relationship kind="action" name="toggleFlowerDetail:"/>
+                <relationship kind="outlet" name="colorChoice" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="flowerDetailView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="flowerView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

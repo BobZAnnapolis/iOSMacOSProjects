@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QOk-3t-URi">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-Cg-sBM">
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" type="user" id="KLT-xM-Jgo"/>
+                                    <constraint firstAttribute="width" constant="143" id="Ym0-qS-S9v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" lineBreakMode="tailTruncation" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-uZ-K9Y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="h2w-5Q-AnG"/>
+                                    <constraint firstAttribute="width" constant="134" id="oGl-0x-NeT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qys-Aw-b9k">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="7Ox-3D-8CU"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="201" type="user" id="irN-XH-6Gv"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="nQg-dz-uem"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tls-TN-Yq2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" type="user" id="mDk-2v-NhQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Choose a Buddy">
+                                    <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newBFF:" destination="2" eventType="touchUpInside" id="47b-5m-1cL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnl-En-NVo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tvx-Dq-Fr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Send Email">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="2" eventType="touchUpInside" id="O6w-dj-gz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M44-dc-B0d">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="gg2-pX-g33"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Send Tweet">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendTweet:" destination="2" eventType="touchUpInside" id="oa3-nV-trF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Uh-W6-rmg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Twd-fW-fOl"/>
+                                    <constraint firstAttribute="width" constant="315" id="wSy-In-zE1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="My Buddy" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="r3q-8K-pKq">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97381085999999994" blue="0.89524343979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qys-Aw-b9k" firstAttribute="top" secondItem="eUH-Cg-sBM" secondAttribute="bottom" constant="18" type="user" id="210-A0-gbO"/>
+                            <constraint firstItem="qys-Aw-b9k" firstAttribute="top" secondItem="1Uh-W6-rmg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5Xj-bv-3g3"/>
+                            <constraint firstAttribute="trailing" secondItem="Vnl-En-NVo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7TI-jy-Q9V"/>
+                            <constraint firstItem="Tls-TN-Yq2" firstAttribute="leading" secondItem="qys-Aw-b9k" secondAttribute="leading" type="default" id="8MX-jL-lR9"/>
+                            <constraint firstAttribute="bottom" secondItem="Tls-TN-Yq2" secondAttribute="bottom" constant="125" type="user" id="8Uz-Xp-hLd"/>
+                            <constraint firstItem="Vnl-En-NVo" firstAttribute="leading" secondItem="Tls-TN-Yq2" secondAttribute="leading" type="default" id="Ahe-mY-Rue"/>
+                            <constraint firstAttribute="trailing" secondItem="qys-Aw-b9k" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IdW-jv-6xX"/>
+                            <constraint firstAttribute="bottom" secondItem="M44-dc-B0d" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KIn-Uo-hgz"/>
+                            <constraint firstItem="Vnl-En-NVo" firstAttribute="leading" secondItem="M44-dc-B0d" secondAttribute="leading" type="default" id="NJE-2z-r9A"/>
+                            <constraint firstItem="r3q-8K-pKq" firstAttribute="top" secondItem="QOk-3t-URi" secondAttribute="top" constant="61" id="Oc7-kK-eea"/>
+                            <constraint firstItem="r3q-8K-pKq" firstAttribute="leading" secondItem="QOk-3t-URi" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UcV-0c-F7c"/>
+                            <constraint firstAttribute="bottom" secondItem="Vnl-En-NVo" secondAttribute="bottom" constant="72" id="YT9-Xb-10i"/>
+                            <constraint firstAttribute="trailing" secondItem="Tls-TN-Yq2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Yg4-ca-xsO"/>
+                            <constraint firstAttribute="trailing" secondItem="M44-dc-B0d" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Yjw-pe-1EH"/>
+                            <constraint firstItem="eUH-Cg-sBM" firstAttribute="top" secondItem="QOk-3t-URi" secondAttribute="top" constant="15" type="user" id="Yvr-vI-2d8"/>
+                            <constraint firstItem="Tls-TN-Yq2" firstAttribute="top" secondItem="qys-Aw-b9k" secondAttribute="bottom" constant="23" type="user" id="bSq-tT-exF"/>
+                            <constraint firstItem="1Uh-W6-rmg" firstAttribute="leading" secondItem="QOk-3t-URi" secondAttribute="leading" constant="-203" id="ic4-Wu-DNb"/>
+                            <constraint firstItem="UBe-uZ-K9Y" firstAttribute="leading" secondItem="QOk-3t-URi" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lsc-gO-3gd"/>
+                            <constraint firstItem="UBe-uZ-K9Y" firstAttribute="top" secondItem="QOk-3t-URi" secondAttribute="top" constant="83" id="uA7-mL-bol"/>
+                            <constraint firstAttribute="trailing" secondItem="eUH-Cg-sBM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="uza-Zi-v5i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="UBe-uZ-K9Y" id="74h-oK-RyL"/>
+                        <outlet property="map" destination="qys-Aw-b9k" id="Flj-tG-Ofv"/>
+                        <outlet property="name" destination="r3q-8K-pKq" id="ygT-aA-2xH"/>
+                        <outlet property="photo" destination="eUH-Cg-sBM" id="CAO-ih-9uC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="newBFF:"/>
+                <relationship kind="action" name="sendEmail:"/>
+                <relationship kind="action" name="sendTweet:"/>
+                <relationship kind="outlet" name="email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

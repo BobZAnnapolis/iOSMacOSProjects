@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="tSj-Pl-uBz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vEv-KR-oyW">
+            <objects>
+                <viewController id="tSj-Pl-uBz" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5eh-cY-Tfk">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="dog1.png" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-GR-pON"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j0-rH-C1V">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="ahB-Zm-qB4">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="136" id="t1F-bj-d7p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="John E. Ray" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-dk-Ru2">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="7LL-DV-keL"/>
+                                            <constraint firstAttribute="width" constant="340" id="hJA-88-dag"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="johnray@mac.com" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-zo-M3h">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="328" id="Tkn-ge-3nN"/>
+                                            <constraint firstAttribute="height" constant="40" id="nN9-qu-ILk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="555-555-1212" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="adp-mT-aNs">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="282" id="hbx-di-ypU"/>
+                                            <constraint firstAttribute="height" constant="42" id="wuY-5g-nFR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-Yd-SE3">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="YsH-HV-Bgr"/>
+                                            <constraint firstAttribute="height" constant="47" id="yix-1m-AGA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone:" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="dOq-1i-AoR">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="MRi-JG-oXN"/>
+                                            <constraint firstAttribute="height" constant="48" id="utV-E2-mpW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="If Found, Please Return To:" lineBreakMode="tailTruncation" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="eoS-bs-iVf">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kY4-ZP-IhN"/>
+                                            <constraint firstAttribute="width" constant="495" id="oJS-XK-rss"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" red="0.043760507140000002" green="0.055115824520000002" blue="0.27173913039999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.80978260869999996" green="0.80978260869999996" blue="0.80978260869999996" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dOq-1i-AoR" firstAttribute="leading" secondItem="3j0-rH-C1V" secondAttribute="leading" constant="58" id="6KK-Wh-hVv"/>
+                                    <constraint firstItem="WOW-zo-M3h" firstAttribute="trailing" secondItem="eoS-bs-iVf" secondAttribute="trailing" type="default" id="DQv-t9-pXr"/>
+                                    <constraint firstItem="WOW-zo-M3h" firstAttribute="leading" secondItem="qF8-dk-Ru2" secondAttribute="leading" type="default" id="E3F-XF-l5s"/>
+                                    <constraint firstItem="ahB-Zm-qB4" firstAttribute="top" secondItem="3j0-rH-C1V" secondAttribute="top" constant="78" id="NCJ-oF-KBK"/>
+                                    <constraint firstItem="dOq-1i-AoR" firstAttribute="centerY" secondItem="adp-mT-aNs" secondAttribute="centerY" type="default" id="NP5-86-nZA"/>
+                                    <constraint firstItem="eoS-bs-iVf" firstAttribute="leading" secondItem="3j0-rH-C1V" secondAttribute="leading" constant="24" id="WRM-k1-feH"/>
+                                    <constraint firstItem="ahB-Zm-qB4" firstAttribute="baseline" secondItem="qF8-dk-Ru2" secondAttribute="baseline" type="default" id="Z7e-uQ-Orw"/>
+                                    <constraint firstItem="ahB-Zm-qB4" firstAttribute="leading" secondItem="3j0-rH-C1V" secondAttribute="leading" constant="69" id="eUK-ew-MUE"/>
+                                    <constraint firstAttribute="bottom" secondItem="dOq-1i-AoR" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="m1Y-HY-VJu"/>
+                                    <constraint firstItem="adp-mT-aNs" firstAttribute="top" secondItem="WOW-zo-M3h" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="otM-L7-yxZ"/>
+                                    <constraint firstItem="1QM-Yd-SE3" firstAttribute="leading" secondItem="3j0-rH-C1V" secondAttribute="leading" constant="71" id="pJr-xR-2EU"/>
+                                    <constraint firstItem="ahB-Zm-qB4" firstAttribute="centerY" secondItem="qF8-dk-Ru2" secondAttribute="centerY" type="default" id="q2x-ZU-w76"/>
+                                    <constraint firstItem="adp-mT-aNs" firstAttribute="leading" secondItem="WOW-zo-M3h" secondAttribute="leading" type="default" id="wYo-qe-2de"/>
+                                    <constraint firstItem="eoS-bs-iVf" firstAttribute="top" secondItem="3j0-rH-C1V" secondAttribute="top" constant="20" symbolic="YES" type="default" id="yQs-ts-K0g"/>
+                                    <constraint firstItem="1QM-Yd-SE3" firstAttribute="top" secondItem="ahB-Zm-qB4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z74-Ex-SMX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3j0-rH-C1V" secondAttribute="trailing" constant="112" id="BeA-Eo-sOx"/>
+                            <constraint firstItem="3j0-rH-C1V" firstAttribute="top" secondItem="5eh-cY-Tfk" secondAttribute="top" constant="20" symbolic="YES" type="default" id="CpF-hm-b3U"/>
+                            <constraint firstItem="I6U-GR-pON" firstAttribute="bottom" secondItem="5eh-cY-Tfk" secondAttribute="bottom" type="default" id="ECF-2h-R40"/>
+                            <constraint firstItem="I6U-GR-pON" firstAttribute="leading" secondItem="5eh-cY-Tfk" secondAttribute="leading" type="default" id="EMo-F2-0M7"/>
+                            <constraint firstItem="I6U-GR-pON" firstAttribute="top" secondItem="5eh-cY-Tfk" secondAttribute="top" type="default" id="VYc-Lj-8RA"/>
+                            <constraint firstAttribute="bottom" secondItem="3j0-rH-C1V" secondAttribute="bottom" constant="743" id="n6K-cA-YVe"/>
+                            <constraint firstItem="3j0-rH-C1V" firstAttribute="leading" secondItem="5eh-cY-Tfk" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oWK-ZZ-1f1"/>
+                            <constraint firstItem="I6U-GR-pON" firstAttribute="trailing" secondItem="5eh-cY-Tfk" secondAttribute="trailing" type="default" id="tmb-no-6yh"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="email" destination="WOW-zo-M3h" id="by2-2x-ilK"/>
+                        <outlet property="name" destination="qF8-dk-Ru2" id="dgo-XK-IFN"/>
+                        <outlet property="phone" destination="adp-mT-aNs" id="33X-UW-WIz"/>
+                        <outlet property="picture" destination="I6U-GR-pON" id="vvr-i1-n18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMw-pq-0KX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="-17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog1.png" width="600" height="614"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="phone" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="picture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

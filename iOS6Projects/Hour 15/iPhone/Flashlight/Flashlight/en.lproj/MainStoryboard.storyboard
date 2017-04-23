@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6O4-sl-ajO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Yz-Zb-Hnk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="juC-GX-WGb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="setLightSourceAlphaValue:" destination="2" eventType="valueChanged" id="dUM-md-2LC"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGv-ox-8OA">
+                                <connections>
+                                    <action selector="setLightSourceAlphaValue:" destination="2" eventType="valueChanged" id="HXs-P1-ZIc"/>
+                                </connections>
+                            </switch>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZr-uZ-ESC">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Yz-Zb-Hnk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8Q7-yy-OQV"/>
+                            <constraint firstItem="9Yz-Zb-Hnk" firstAttribute="top" secondItem="XGv-ox-8OA" secondAttribute="top" type="default" id="NSB-tP-BIk"/>
+                            <constraint firstItem="XGv-ox-8OA" firstAttribute="top" secondItem="oZr-uZ-ESC" secondAttribute="bottom" constant="24" type="user" id="Npc-0h-vAX"/>
+                            <constraint firstItem="oZr-uZ-ESC" firstAttribute="leading" secondItem="6O4-sl-ajO" secondAttribute="leading" type="default" id="Ov7-j2-Bcr"/>
+                            <constraint firstAttribute="bottom" secondItem="oZr-uZ-ESC" secondAttribute="bottom" constant="71" type="user" id="bvb-Sq-14U"/>
+                            <constraint firstItem="oZr-uZ-ESC" firstAttribute="top" secondItem="6O4-sl-ajO" secondAttribute="top" constant="-1" id="coH-KM-qDm"/>
+                            <constraint firstItem="oZr-uZ-ESC" firstAttribute="trailing" secondItem="6O4-sl-ajO" secondAttribute="trailing" type="default" id="uss-jm-BcA"/>
+                            <constraint firstAttribute="bottom" secondItem="XGv-ox-8OA" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="xtR-rN-Pab"/>
+                            <constraint firstItem="XGv-ox-8OA" firstAttribute="leading" secondItem="6O4-sl-ajO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ykz-D5-dYG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brightnessSlider" destination="9Yz-Zb-Hnk" id="x4V-FJ-9Rw"/>
+                        <outlet property="lightSource" destination="oZr-uZ-ESC" id="psY-Zo-Rc7"/>
+                        <outlet property="toggleSwitch" destination="XGv-ox-8OA" id="v2v-Yp-EMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setLightSourceAlphaValue:"/>
+                <relationship kind="outlet" name="brightnessSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="lightSource" candidateClass="UIView"/>
+                <relationship kind="outlet" name="toggleSwitch" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

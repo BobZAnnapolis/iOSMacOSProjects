@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Xx-e8-Xgn">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-QF-6c8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" type="user" id="jx8-0K-SO8"/>
+                                </constraints>
+                            </imageView>
+                            <view clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLv-fE-cNx">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Checking the Distance" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlt-2F-cva">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="hST-Iz-Fg8"/>
+                                            <constraint firstAttribute="width" constant="177" id="oVC-ib-rvy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-Tf-Trt"/>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Vlt-2F-cva" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3eR-nc-q2I"/>
+                                    <constraint firstItem="Vlt-2F-cva" firstAttribute="leading" secondItem="QLv-fE-cNx" secondAttribute="leading" constant="74" id="GYk-uh-d26"/>
+                                    <constraint firstAttribute="height" constant="88" type="user" id="Q1j-wV-SyI"/>
+                                    <constraint firstItem="Qna-Tf-Trt" firstAttribute="leading" secondItem="QLv-fE-cNx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Raj-5G-ddS"/>
+                                    <constraint firstItem="Qna-Tf-Trt" firstAttribute="top" secondItem="QLv-fE-cNx" secondAttribute="top" constant="28" id="TxH-kr-Okp"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUS-d8-PNt">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Lots of miles to the Mothership!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="8TG-za-N3e">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" type="user" id="FrI-p0-Ow1"/>
+                                    <constraint firstItem="8TG-za-N3e" firstAttribute="top" secondItem="oUS-d8-PNt" secondAttribute="top" constant="20" symbolic="YES" type="default" id="oMY-Az-CMx"/>
+                                    <constraint firstItem="8TG-za-N3e" firstAttribute="centerX" secondItem="oUS-d8-PNt" secondAttribute="centerX" type="default" id="sjH-Zu-HxA"/>
+                                    <constraint firstItem="8TG-za-N3e" firstAttribute="leading" secondItem="oUS-d8-PNt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uPR-78-IDu"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="up_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRf-g3-bTh"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aOK-QF-6c8" firstAttribute="leading" secondItem="1Xx-e8-Xgn" secondAttribute="leading" type="default" id="1Nj-gt-676"/>
+                            <constraint firstItem="tRf-g3-bTh" firstAttribute="top" secondItem="1Xx-e8-Xgn" secondAttribute="top" constant="20" symbolic="YES" type="default" id="2bC-Mg-bYB"/>
+                            <constraint firstItem="QLv-fE-cNx" firstAttribute="centerX" secondItem="tRf-g3-bTh" secondAttribute="centerX" type="default" id="4nw-LC-B0I"/>
+                            <constraint firstAttribute="trailing" secondItem="oUS-d8-PNt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9bB-sA-OMc"/>
+                            <constraint firstItem="aOK-QF-6c8" firstAttribute="trailing" secondItem="1Xx-e8-Xgn" secondAttribute="trailing" type="default" id="KHT-S2-NTy"/>
+                            <constraint firstItem="oUS-d8-PNt" firstAttribute="leading" secondItem="1Xx-e8-Xgn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KXm-uM-40k"/>
+                            <constraint firstAttribute="trailing" secondItem="QLv-fE-cNx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NkZ-Ph-kZZ"/>
+                            <constraint firstItem="aOK-QF-6c8" firstAttribute="centerY" secondItem="QLv-fE-cNx" secondAttribute="centerY" type="default" id="aip-6h-q3z"/>
+                            <constraint firstItem="QLv-fE-cNx" firstAttribute="centerY" secondItem="1Xx-e8-Xgn" secondAttribute="centerY" type="default" id="g2V-tp-fHL"/>
+                            <constraint firstItem="QLv-fE-cNx" firstAttribute="leading" secondItem="1Xx-e8-Xgn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tVZ-fb-k9u"/>
+                            <constraint firstAttribute="bottom" secondItem="oUS-d8-PNt" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xw1-rx-z5M"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="directionArrow" destination="tRf-g3-bTh" id="Wbg-41-yRa"/>
+                        <outlet property="distanceLabel" destination="8TG-za-N3e" id="xkF-aO-rq7"/>
+                        <outlet property="distanceView" destination="oUS-d8-PNt" id="Kyd-3g-NUt"/>
+                        <outlet property="waitView" destination="QLv-fE-cNx" id="6Xi-2M-UnT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.png" width="379" height="568"/>
+        <image name="up_arrow.png" width="150" height="150"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="directionArrow" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="waitView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

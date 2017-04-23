@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i7f-Ya-iC8"/>
+                        <viewControllerLayoutGuide type="bottom" id="7s2-2U-8xC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="shi-nv-R9i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-r9-ije">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome to iOS 6 Development" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="7nu-ip-ZNf">
+                                <rect key="frame" x="20" y="453" width="280" height="75"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                <color key="textColor" red="0.93758491850000003" green="0.93758491850000003" blue="0.93758491850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7nu-ip-ZNf" secondAttribute="bottom" constant="40" id="3MD-02-hLh"/>
+                            <constraint firstItem="d0g-r9-ije" firstAttribute="bottom" secondItem="shi-nv-R9i" secondAttribute="bottom" id="DmB-xw-4vJ"/>
+                            <constraint firstItem="7nu-ip-ZNf" firstAttribute="leading" secondItem="shi-nv-R9i" secondAttribute="leading" constant="20" symbolic="YES" id="P3O-Pd-lyk"/>
+                            <constraint firstItem="d0g-r9-ije" firstAttribute="trailing" secondItem="shi-nv-R9i" secondAttribute="trailing" id="TX5-SY-mWT"/>
+                            <constraint firstItem="d0g-r9-ije" firstAttribute="top" secondItem="shi-nv-R9i" secondAttribute="top" id="nTp-XL-WJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="7nu-ip-ZNf" secondAttribute="trailing" constant="20" symbolic="YES" id="r4P-Oy-MAH"/>
+                            <constraint firstItem="d0g-r9-ije" firstAttribute="leading" secondItem="shi-nv-R9i" secondAttribute="leading" id="sBz-fK-Wc0"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7nu-ip-ZNf" secondAttribute="bottom" constant="30" id="xDH-AQ-JKj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="640" height="960"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
